@@ -15,3 +15,22 @@ r_dir_file(vendor_hal_camera_default, vendor_sysfs_camera)
 r_dir_file(vendor_hal_camera_default, vendor_sysfs_graphics)
 
 get_prop(vendor_hal_camera_default, camera_config_prop)
+
+# The vendor camera manager looks up the framework camera service.
+allow vendor_hal_camera_default fwk_camera_hwservice:hwservice_manager find;
+
+# HIDL graphics allocator/mapper client plumbing.
+allow vendor_hal_camera_default hidl_token_hwservice:hwservice_manager find;
+allow vendor_hal_camera_default hal_graphics_mapper_hwservice:hwservice_manager find;
+allow vendor_hal_camera_default hal_graphics_allocator_hwservice:hwservice_manager find;
+allow vendor_hal_camera_default hal_graphics_allocator_default:binder call;
+allow vendor_hal_camera_default hal_graphics_allocator_default:fd use;
+allow vendor_hal_camera_default hal_graphics_allocator_default_tmpfs:file rw_file_perms;
+
+# Qualcomm camera provider IPC.
+allow vendor_hal_camera_default hal_camera_default:binder { call transfer };
+allow vendor_hal_camera_default hal_camera_default:fd use;
+
+# Persistent camera data.
+allow vendor_hal_camera_default vendor_data_file:dir create_dir_perms;
+allow vendor_hal_camera_default vendor_data_file:file create_file_perms;
