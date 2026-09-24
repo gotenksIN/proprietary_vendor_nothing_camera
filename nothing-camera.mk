@@ -17,9 +17,6 @@ $(call soong_config_set,camera,package_name,com.nothing.device.package_name)
 BOARD_VENDOR_SEPOLICY_DIRS += \
     vendor/nothing/camera/sepolicy/vendor
 
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    vendor/nothing/camera/sepolicy/system_ext_private
-
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     vendor/nothing/camera/configs/vintf/camera_framework_compatibility_matrix.xml
 
