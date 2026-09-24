@@ -90,9 +90,6 @@ vendor/lib64/libmorpho_RawDeepDenoise.so
 vendor/lib64/libsuperresolution_raw.arcsoft.so
 
 # Nothing camera resources
-vendor/etc/camera/arc_ghz_data1.bin
-vendor/etc/camera/arc_ghz_data2.bin;SPLIT_FILE=99M
-vendor/etc/camera/arc_ghz_data3.bin
 vendor/etc/camera/nothing_node.bin
 vendor/etc/camera/nothing_pipeline.bin
 vendor/etc/camera/nothing_noise_stat.bin

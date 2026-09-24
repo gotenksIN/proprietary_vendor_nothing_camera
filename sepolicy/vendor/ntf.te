@@ -9,4 +9,4 @@ allow ntf device:file { create getattr open read write };
 type_transition ntf device:file ntf_file;
 allow ntf ntf_file:file { create getattr open read setattr write map };
 
-allow vendor_hal_camera_default ntf_file:file { getattr open read map };
+r_dir_file(domain, ntf_file)

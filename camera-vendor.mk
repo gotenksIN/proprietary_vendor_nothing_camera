@@ -13,9 +13,6 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/camera/proprietary/vendor/etc/camera/CFR_para4_Nothing_M_v100-8_AI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para4_Nothing_M_v100-8_AI.bin \
     vendor/nothing/camera/proprietary/vendor/etc/camera/CFR_para4_Nothing_UW_v101-5_AI.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para4_Nothing_UW_v101-5_AI.bin \
     vendor/nothing/camera/proprietary/vendor/etc/camera/Ndot-55.otf:$(TARGET_COPY_OUT_VENDOR)/etc/camera/Ndot-55.otf \
-    vendor/nothing/camera/proprietary/vendor/etc/camera/arc_ghz_data1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arc_ghz_data1.bin \
-    vendor/nothing/camera/proprietary/vendor/etc/camera/arc_ghz_data2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arc_ghz_data2.bin \
-    vendor/nothing/camera/proprietary/vendor/etc/camera/arc_ghz_data3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/arc_ghz_data3.bin \
     vendor/nothing/camera/proprietary/vendor/etc/camera/nothing_node.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_node.bin \
     vendor/nothing/camera/proprietary/vendor/etc/camera/nothing_noise_stat.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_noise_stat.bin \
     vendor/nothing/camera/proprietary/vendor/etc/camera/nothing_pipeline.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_pipeline.bin \

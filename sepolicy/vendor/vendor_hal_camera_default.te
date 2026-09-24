@@ -6,10 +6,22 @@ init_daemon_domain(vendor_hal_camera_default)
 hal_server_domain(vendor_hal_camera_default, vendor_hal_noth_camera)
 hal_server_domain(vendor_hal_camera_default, hal_camera)
 hal_client_domain(vendor_hal_camera_default, hal_graphics_allocator)
+hal_client_domain(vendor_hal_camera_default, vendor_hal_dspmanager)
+hal_client_domain(vendor_hal_camera_default, vendor_hal_perf)
+
+allow vendor_hal_camera_default {
+    gpu_device
+    tee_device
+    vendor_dmabuf_system_heap_device
+    vendor_dmabuf_user_contig_heap_device
+    vendor_dmabuf_display_heap_device
+    vendor_qdsp_device
+    vendor_xdsp_device
+}:chr_file rw_file_perms;
 
 binder_use(vendor_hal_camera_default)
 binder_call(vendor_hal_camera_default, cameraserver)
-binder_call(vendor_hal_camera_default, platform_app)
+binder_call(cameraserver, vendor_hal_camera_default)
 
 r_dir_file(vendor_hal_camera_default, vendor_sysfs_camera)
 r_dir_file(vendor_hal_camera_default, vendor_sysfs_graphics)
@@ -29,8 +41,8 @@ allow vendor_hal_camera_default hal_graphics_allocator_default:fd use;
 allow vendor_hal_camera_default hal_graphics_allocator_default_tmpfs:file rw_file_perms;
 
 # Qualcomm camera provider IPC.
-allow vendor_hal_camera_default hal_camera_default:binder { call transfer };
-allow vendor_hal_camera_default hal_camera_default:fd use;
+binder_call(vendor_hal_camera_default, hal_camera_default)
+binder_call(hal_camera_default, vendor_hal_camera_default)
 
 # Persistent camera data.
 allow vendor_hal_camera_default vendor_data_file:dir create_dir_perms;
