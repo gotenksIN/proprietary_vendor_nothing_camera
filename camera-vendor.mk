@@ -20,6 +20,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/camera/proprietary/vendor/etc/camera/nothing_noise_stat.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_noise_stat.bin \
     vendor/nothing/camera/proprietary/vendor/etc/camera/nothing_pipeline.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/nothing_pipeline.bin \
     vendor/nothing/camera/proprietary/vendor/etc/camera/ntcamoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ntcamoverridesettings.txt \
+    vendor/nothing/camera/proprietary/vendor/etc/init/init.ntf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.ntf.rc \
     vendor/nothing/camera/proprietary/vendor/etc/init/vendor.noth.hardware.camera-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.noth.hardware.camera-service.rc \
     vendor/nothing/camera/proprietary/vendor/etc/permissions/com.nothing.features_vnd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nothing.features_vnd.xml
 
@@ -94,4 +95,5 @@ PRODUCT_PACKAGES += \
     libofflineproc_jni \
     NTCamera \
     vendor.noth.hardware.camera-service.xml \
-    vendor.noth.hardware.camera-service
+    vendor.noth.hardware.camera-service \
+    ntf-service

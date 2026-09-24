@@ -14,6 +14,10 @@ vendor/etc/vintf/manifest/vendor.noth.hardware.camera-service.xml
 vendor/lib64/vendor.noth.hardware.camera-service-impl.so
 vendor/lib64/vendor.noth.hardware.camera-V1-ndk_platform.so
 
+# Nothing camera feature flags
+vendor/bin/ntf-service
+vendor/etc/init/init.ntf.rc
+
 # Nothing camera libraries
 vendor/lib64/libntcamallocator.so
 vendor/lib64/libntcamcommonutils.so

@@ -1,1 +1,3 @@
 /vendor/bin/hw/vendor\.noth\.hardware\.camera-service                              u:object_r:vendor_hal_camera_default_exec:s0
+/vendor/bin/ntf-service                                                             u:object_r:ntf_exec:s0
+/dev/ntfeature                                                                      u:object_r:ntf_file:s0
