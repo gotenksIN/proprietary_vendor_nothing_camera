@@ -10,7 +10,6 @@ r_dir_file(noth_camera_app, vendor_richtap_resources)
 # Privileged camera app service access.
 allow noth_camera_app {
     app_api_service
-    system_api_service
     audioserver_service
     cameraserver_service
     mediaserver_service
