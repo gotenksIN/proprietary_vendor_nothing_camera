@@ -1,0 +1,8 @@
+type noth_camera_app, domain;
+
+app_domain(noth_camera_app)
+
+hal_client_domain(noth_camera_app, vendor_hal_noth_camera)
+
+# The JNI looks up media.offline (used by getOfflineProcService) through the service manager.
+allow noth_camera_app cameraserver_service:service_manager find;
