@@ -2,19 +2,14 @@
 /vendor/bin/ntf-service                                                             u:object_r:ntf_exec:s0
 /dev/ntfeature                                                                      u:object_r:ntf_file:s0
 
-# SPHAL libraries for Nothing Camera & imaging algorithms (64-bit & DSP skels)
-/vendor/lib/dsp/fastrpc_shell_0                                                     u:object_r:same_process_hal_file:s0
+# Hexagon DSP skel libraries
 /vendor/lib/rfsa/adsp/libarc_htp_driver_skel\.so                                  u:object_r:same_process_hal_file:s0
 /vendor/lib/rfsa/adsp/libarcsoft_beauty_hvx_skel\.so                              u:object_r:same_process_hal_file:s0
 /vendor/lib/rfsa/adsp/libQnnHtpV69\.so                                            u:object_r:same_process_hal_file:s0
 /vendor/lib/rfsa/adsp/libQnnHtpV69Skel\.so                                        u:object_r:same_process_hal_file:s0
 
-/vendor/lib64/libalAI_Seg\.so                                                      u:object_r:same_process_hal_file:s0
+# 64-bit camera & imaging algorithm SPHAL libraries
 /vendor/lib64/libalCFR\.so                                                         u:object_r:same_process_hal_file:s0
-/vendor/lib64/libalNN\.so                                                          u:object_r:same_process_hal_file:s0
-/vendor/lib64/libalNN_engine\.so                                                   u:object_r:same_process_hal_file:s0
-/vendor/lib64/libalNN_gpu\.so                                                      u:object_r:same_process_hal_file:s0
-/vendor/lib64/libalNN_snpe\.so                                                     u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_ai_moon\.so                                               u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_aiscenedetection\.so                                      u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_base_utils\.so                                            u:object_r:same_process_hal_file:s0
@@ -29,11 +24,8 @@
 /vendor/lib64/libarcsoft_facialrestoration\.so                                     u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_hdr_detection\.so                                         u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_high_dynamic_range\.so                                    u:object_r:same_process_hal_file:s0
-/vendor/lib64/libarcsoft_high_dynamic_range_v5\.so                                 u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_lensstaindetection\.so                                    u:object_r:same_process_hal_file:s0
-/vendor/lib64/libarcsoft_low_light_hdr\.so                                         u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_mcxmflpolicy\.so                                          u:object_r:same_process_hal_file:s0
-/vendor/lib64/libarcsoft_mf_superresolution\.so                                    u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_native_hdrbokeh_engine\.so                                u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_night_video\.so                                           u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_panorama\.so                                              u:object_r:same_process_hal_file:s0
@@ -42,40 +34,17 @@
 /vendor/lib64/libarcsoft_qnnhtp\.so                                                u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_singlecam_bokeh\.so                                       u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_super_night_raw\.so                                       u:object_r:same_process_hal_file:s0
-/vendor/lib64/libarcsoft_superportrait\.so                                         u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_t_hdr_raw\.so                                             u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_t_hdr_raw_front\.so                                       u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_tfp_grf\.so                                               u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_turbo_fusion_raw_portrait_super_night\.so                 u:object_r:same_process_hal_file:s0
 /vendor/lib64/libarcsoft_turbo_fusion_raw_super_night\.so                          u:object_r:same_process_hal_file:s0
-/vendor/lib64/libarcsoft_watermark\.so                                             u:object_r:same_process_hal_file:s0
-/vendor/lib64/libcamxextension_algo\.so                                            u:object_r:same_process_hal_file:s0
-/vendor/lib64/libcamxextension_night\.so                                           u:object_r:same_process_hal_file:s0
 /vendor/lib64/libdiag\.so                                                          u:object_r:same_process_hal_file:s0
-/vendor/lib64/libhta_hexagon_runtime_qnn\.so                                       u:object_r:same_process_hal_file:s0
 /vendor/lib64/libhyperzoom\.arcsoft\.so                                           u:object_r:same_process_hal_file:s0
 /vendor/lib64/libmorpho_RapidEffect\.so                                            u:object_r:same_process_hal_file:s0
 /vendor/lib64/libmorpho_RawDeepDenoise\.so                                         u:object_r:same_process_hal_file:s0
 /vendor/lib64/libmouth_mask_detection\.arcsoft\.so                                 u:object_r:same_process_hal_file:s0
 /vendor/lib64/libmpbase\.so                                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libofflinepostprocclient\.so                                         u:object_r:same_process_hal_file:s0
-/vendor/lib64/libPlatformValidatorShared\.so                                       u:object_r:same_process_hal_file:s0
-/vendor/lib64/libportrait_repair_ppl3_ocl\.so                                      u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnChrometraceProfilingReader\.so                                 u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnCpu\.so                                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnDsp\.so                                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnDspNetRunExtensions\.so                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnGpu\.so                                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnGpuNetRunExtensions\.so                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnGpuProfilingReader\.so                                         u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnHta\.so                                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnHtaNetRunExtensions\.so                                        u:object_r:same_process_hal_file:s0
 /vendor/lib64/libQnnHtp\.so                                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnHtpNetRunExtensions\.so                                        u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnHtpPrepare\.so                                                 u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnHtpProfilingReader\.so                                         u:object_r:same_process_hal_file:s0
 /vendor/lib64/libQnnHtpV69Stub\.so                                                 u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnSaver\.so                                                      u:object_r:same_process_hal_file:s0
-/vendor/lib64/libQnnSystem\.so                                                     u:object_r:same_process_hal_file:s0
 /vendor/lib64/libsuperresolution_raw\.arcsoft\.so                                 u:object_r:same_process_hal_file:s0
-/vendor/lib64/vendor\.qti\.hardware\.camera\.postproc@1\.0\.so                     u:object_r:same_process_hal_file:s0
