@@ -1,1 +1,2 @@
 user=_app seinfo=platform isPrivApp=true name=com.nothing.camera domain=noth_camera_app type=app_data_file levelFrom=all
+user=_app seinfo=platform isPrivApp=true name=com.camera.ufs.service domain=noth_camera_app type=app_data_file levelFrom=all
