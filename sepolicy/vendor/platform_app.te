@@ -1,4 +1,5 @@
 hal_client_domain(platform_app, vendor_hal_noth_camera)
+hal_client_domain(platform_app_36, vendor_hal_noth_camera)
 hal_client_domain(platform_app, vendor_hal_perf)
 
 r_dir_file(platform_app, vendor_richtap_resources)
