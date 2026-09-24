@@ -1,0 +1,12 @@
+MaxRequestQueueDepth=2
+NumberOfThread=4
+LogInfoMask=0xffff
+LogVerboseMask=0x71
+LogDebugMask=0xffff
+LivePendingRequestTimeOut=30000
+EnableReuqestLIFO=1
+MaxMemPoolTotalBufferNumber=100
+MaxRequestQueueDepthForBokeh=1
+DelayedTriggerOfAbort=1
+TeleZoomStart=3.0
+CameraPosition=0,1,2,3,-1,3,3,4
