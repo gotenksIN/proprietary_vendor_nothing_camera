@@ -25,7 +25,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.nothing.camera \
-    ro.com.google.lens.oem_camera_package=com.nothing.camera \
-    vendor.camera.aux.packagelist=com.nothing.camera
+    ro.com.google.lens.oem_camera_package=com.nothing.camera
 
 $(call inherit-product, vendor/nothing/camera/camera-vendor.mk)
