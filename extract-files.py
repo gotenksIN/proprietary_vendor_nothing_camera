@@ -11,13 +11,6 @@ from extract_utils_camera.module import ExtractUtilsCameraModule
 
 
 blob_fixups: blob_fixups_user_type = {
-    (
-        'vendor/lib64/libntcamallocator.so',
-        'vendor/lib64/vendor.noth.hardware.camera-service-impl.so',
-    ): blob_fixup().add_needed('libui_shim.so'),
-    'vendor/etc/init/vendor.noth.hardware.camera-service.rc': (
-        blob_fixup().regex_replace(r'\bNtCamAlgoCapacity\b', 'CameraServiceCapacity')
-    ),
     'system_ext/lib64/libofflineproc_jni.so': (
         blob_fixup().add_needed('libofflineproc_shim.so')
     ),

@@ -14,12 +14,6 @@
 
 $(call soong_config_set,camera,package_name,com.nothing.device.package_name)
 
-BOARD_VENDOR_SEPOLICY_DIRS += \
-    vendor/nothing/camera/sepolicy/vendor
-
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    vendor/nothing/camera/configs/vintf/camera_framework_compatibility_matrix.xml
-
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.camera.privapp.list=com.nothing.camera \
     ro.com.google.lens.oem_camera_package=com.nothing.camera
